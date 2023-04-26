@@ -1,48 +1,176 @@
 <!doctype html>
 <html lang="en">
  <head>
-  <title>Testsite</title>
+  <title>Easy Pattern Drafting</title>
   <meta charset="UTF-8">
   <meta name="Generator" content="Visual Code">
   <meta name="Author" content="Kingmaico">
   <meta name="Description" content="Testfile for Git/Github project.">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' href='style.css' type='text/css' media='all' />
- </head>
+  <!-- Get Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <!-- Get Google Fonts -->
+  <style>@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200&display=swap');</style>
+</head>
+
  <body>
-<h1>Easy Pattern Drafting</h1>
-<p>intro</p>
-  <h2>INDEX</h2>
-  <ol>
-   <li><a href="prepping.html">Basic tools</a></li>
-  </ol>
-<p>Dit is geen test, maar een hele serieuze aangelegenheid. Want Git geeft me hoofdpijn :p. Dus aLs dit werkt, doe ik een dansje.</p>
-<img src="https://media.giphy.com/media/LUhUvH4BsfE9USnlPd/giphy.gif" /> 
+    <!--Navbar block-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Easy Pattern Drafting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu item 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu item 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Menu item 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <h3>Even kijken of Javascript wel werkt - ja dus :D</h3>
-  
-  <p id="berekeningen"></p>
-  
-  <script>
-   var ll;
-   var bw;
-   var tw;
-   var hw;
-   
-   ll = 168;
-   bw = 102;
-   tw = 78;
-   hw = 98;
-   
-   var rughoogte;
-   var ruglengte;
-   var zitdiepte;
-   
-   rughoogte = (bw * 0.1)+10.5;
-   document.getElementById("berekeningen").innerHTML = "De rughoogte is " + rughoogte + " cm";
-   
-   
-  </script>
+    <!-- Intro block -->
 
- </body>
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <div class="container">
+           <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Create your own <br><span class="text-warning">Sewing Pattern</span></h1>
+                <p class="my-4">
+                    <ol class="lead">
+                        <li><svg fill="currentColor" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.462 500.462" xml:space="preserve" stroke="currentColor" stroke-width="8.007392"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M375.913,42.712h-74.75v9.846c0,13.606-5.288,26.404-14.913,36.019c-9.625,9.625-22.413,14.923-36.019,14.923 c-13.615,0-26.413-5.298-36.029-14.933c-9.606-9.615-14.894-22.404-14.875-36l0.01-9.856h-74.798L0,167.26l77.058,77.058 l41.702-41.692V457.75h262.933V202.625l41.702,41.692l77.067-77.058L375.913,42.712z M362,155.087v282.971H138.452V155.087 l-61.394,61.385L27.846,167.26L132.692,62.404h47.606c2.087,15.125,8.99,29.096,19.971,40.087 c13.337,13.346,31.077,20.702,49.962,20.702c18.865,0,36.606-7.346,49.942-20.683c10.99-11,17.913-24.971,20.01-40.106h47.577 L472.615,167.26l-49.221,49.212L362,155.087z"></path> </g> </g> </g></svg>
+                          Choose a model</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-universal-access" viewBox="0 0 16 16">
+                            <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9V5.5Z"/>
+                          </svg>  Enter basic measurement</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>  Start drawing!</li>
+                    </ol>
+                </p>
+                <button class="btn btn-primary btn-lg my-3">
+                    Get started!
+                </button>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="images/sewing-clothes-pattern.png" alt="Free pattern drafting online">
+            </div> 
+        </div>
+    </section>
+
+    <!-- How-to block -->
+
+    <section class="bg-light text-dark p-5">
+        <div class="container text-center">
+            <h2 class="mb-5">
+                How does it work
+            </h2>
+            <div class="row">
+                <div class="col-md mb-4">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <div class="my-3"><svg fill="currentColor" height="42px" width="42px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500.462 500.462" xml:space="preserve" stroke="currentColor" stroke-width="8.007392"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M375.913,42.712h-74.75v9.846c0,13.606-5.288,26.404-14.913,36.019c-9.625,9.625-22.413,14.923-36.019,14.923 c-13.615,0-26.413-5.298-36.029-14.933c-9.606-9.615-14.894-22.404-14.875-36l0.01-9.856h-74.798L0,167.26l77.058,77.058 l41.702-41.692V457.75h262.933V202.625l41.702,41.692l77.067-77.058L375.913,42.712z M362,155.087v282.971H138.452V155.087 l-61.394,61.385L27.846,167.26L132.692,62.404h47.606c2.087,15.125,8.99,29.096,19.971,40.087 c13.337,13.346,31.077,20.702,49.962,20.702c18.865,0,36.606-7.346,49.942-20.683c10.99-11,17.913-24.971,20.01-40.106h47.577 L472.615,167.26l-49.221,49.212L362,155.087z"></path> </g> </g> </g></svg>
+                            </div>
+                            <h4 class="card-title mb-3">Choose a model</h4>
+                            <p class="card-rext">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit iure porro labore ratione tempore facere eos, veniam impedit id!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mb-4"><div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                        <div class="my-3"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-universal-access" viewBox="0 0 16 16">
+                            <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM6 5.5l-4.535-.442A.531.531 0 0 1 1.531 4H14.47a.531.531 0 0 1 .066 1.058L10 5.5V9l.452 6.42a.535.535 0 0 1-1.053.174L8.243 9.97c-.064-.252-.422-.252-.486 0l-1.156 5.624a.535.535 0 0 1-1.053-.174L6 9V5.5Z"/>
+                          </svg>
+                        </div>
+                        <h4 class="card-title mb-3">Enter basic measurements</h4>
+                        <p class="card-rext">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit iure porro labore ratione tempore facere eos, veniam impedit id!
+                        </p>
+                    </div>
+                </div></div>
+                <div class="col-md mb-4"><div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                        <div class="my-3"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                          </svg>
+                        </div>
+                        <h4 class="card-title mb-3">Start drawing</h4>
+                        <p class="card-rext">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur fugit iure porro labore ratione tempore facere eos, veniam impedit id!
+                        </p>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Questions block -->
+
+    <section id="questions" class="px-5 pb-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Getting started</h2>
+            <div class="accordion accordion-flush" id="question">
+                <!--Question 1 -->
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                      What tools do I need to get started?
+                    </button>
+                  </h3>
+                  <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#question">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti unde minima labore placeat praesentium nihil rem eum, in ipsa. Eos similique excepturi, saepe unde ipsa inventore reprehenderit, cumque deleniti nisi accusantium animi, modi deserunt adipisci odio numquam id mollitia corrupti nostrum tempore? Quod incidunt voluptas fugit corporis eligendi repellat!</div>
+                  </div>
+                </div>
+                <!--Question 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                        Is this tool beginner friendly?
+                      </button>
+                    </h3>
+                    <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#question">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti unde minima labore placeat praesentium nihil rem eum, in ipsa. Eos similique excepturi, saepe unde ipsa inventore reprehenderit, cumque deleniti nisi accusantium animi, modi deserunt adipisci odio numquam id mollitia corrupti nostrum tempore? Quod incidunt voluptas fugit corporis eligendi repellat!</div>
+                    </div>
+                  </div>
+                <!--Question 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                        Can I use this tool for free?
+                      </button>
+                    </h3>
+                    <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#question">
+                      <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti unde minima labore placeat praesentium nihil rem eum, in ipsa. Eos similique excepturi, saepe unde ipsa inventore reprehenderit, cumque deleniti nisi accusantium animi, modi deserunt adipisci odio numquam id mollitia corrupti nostrum tempore? Quod incidunt voluptas fugit corporis eligendi repellat!</div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p>
+                Copyright &copy; King Maico & JPerun 2023
+            </p>
+            <p>
+              <a href="#" class="postion-absolute bottom-0 end-0 p-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg></a>
+            </p>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
  </html>

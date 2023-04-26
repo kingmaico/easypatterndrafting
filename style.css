@@ -1,1 +1,9 @@
-body {padding:50px;}
+h1, h2{
+  font-family: 'Pacifico', cursive;
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
